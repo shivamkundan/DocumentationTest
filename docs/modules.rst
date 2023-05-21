@@ -5,4 +5,4 @@ DocumentationTest
    :maxdepth: 4
 
    
-   doc_test
+   main
