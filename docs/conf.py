@@ -3,12 +3,13 @@
 # For the full list of built-in configuration values, see the documentation:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 import sys, os
+sys.path.append(os.path.abspath('..'))
+sys.path.append(os.path.abspath('../test_folder'))
+sys.path.append('/home/pi/DocumentationTest')
+sys.path.append('/home/pi/DocumentationTest/test_folder')
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
-# sys.path.append(os.path.abspath('..'))
-# sys.path.append(os.path.abspath('../newfile2'))
-
 project = 'DocumentationTest'
 copyright = '2023, Shivam Kundan'
 author = 'Shivam Kundan'
@@ -25,7 +26,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 # autoapi_dirs = ['../']
 
-autodoc_mock_imports = ["ROOT"]
+# autodoc_mock_imports = ["ROOT"]
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output

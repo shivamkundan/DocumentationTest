@@ -7,3 +7,4 @@ DocumentationTest
    
    main
    newfile
+   newfile2

@@ -2,5 +2,5 @@
 
 
 def new_func2():
-	''' This is called new_func2'''
+	''' This is called new_func2 also'''
 	print ("New func2")

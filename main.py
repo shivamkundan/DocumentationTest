@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 
+import sys, os
+sys.path.append('/home/pi/DocumentationTest/test_folder/')
+
 ''' This is the main file'''
 import sys, os
-sys.path.insert(0,os.path.abspath('/home/pi/DocumentationTest/test_folder/'))
-sys.path.insert(0,os.path.abspath('/home/pi/DocumentationTest/'))
-
 from newfile import *
 from newfile2 import *
 
@@ -16,7 +16,7 @@ def main():
 	'''This is the main main function'''
 	print_msg()
 	new_func()
-	newfile2()
+	new_func2()
 
 if __name__ == '__main__':
 	main()
