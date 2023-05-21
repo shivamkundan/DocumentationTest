@@ -18,12 +18,12 @@ author = 'Shivam Kundan'
 
 extensions = ['sphinx.ext.autodoc']
 
-extensions = ['autoapi.extension']
+# extensions = ['autoapi.extension']
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
-autoapi_dirs = ['../']
+# autoapi_dirs = ['../']
 
 autodoc_mock_imports = ["ROOT"]
 
