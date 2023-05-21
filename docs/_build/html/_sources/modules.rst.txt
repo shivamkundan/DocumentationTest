@@ -6,3 +6,4 @@ DocumentationTest
 
    
    main
+   newfile

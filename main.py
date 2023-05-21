@@ -1,4 +1,8 @@
-''' This project is to test readthedocs compatibility'''
+#!/usr/bin/python3
+
+''' This is the main file'''
+
+from newfile import *
 
 def print_msg():
 	''' Prints a message'''
@@ -7,6 +11,7 @@ def print_msg():
 def main():
 	'''This is the main main function'''
 	print_msg()
+	new_func()
 
 if __name__ == '__main__':
 	main()

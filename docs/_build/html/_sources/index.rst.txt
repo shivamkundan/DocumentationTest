@@ -5,15 +5,12 @@
 
 Welcome to Documentation Test's documentation!
 ==============================================
+Hello and welcome to my test project page.
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Modules:
-   
    modules
 
 
