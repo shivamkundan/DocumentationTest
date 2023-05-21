@@ -8,3 +8,4 @@ DocumentationTest
    main
    newfile
    newfile2
+   test_folder

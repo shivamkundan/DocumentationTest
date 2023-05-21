@@ -12,6 +12,12 @@ Welcome to DocumentationTest's documentation!
 
    modules
 
+.. toctree::
+   :maxdepth: 2
+   :caption: Modules
+
+   newfile2
+
 
 Indices and tables
 ==================
