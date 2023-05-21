@@ -17,7 +17,8 @@ Hello and welcome to my test project page.
    :maxdepth: 2
    :caption: Modules:
 
-   modules
+   main
+   newfile
 
 
 Indices and tables
