@@ -13,6 +13,12 @@ Hello and welcome to my test project page.
 
    modules
 
+.. toctree::
+   :maxdepth: 2
+   :caption: Modules:
+
+   modules
+
 
 Indices and tables
 ==================
