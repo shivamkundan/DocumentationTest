@@ -17,6 +17,7 @@ Welcome to DocumentationTest's documentation!
    :caption: Modules
 
    newfile2
+   test_folder
 
 
 Indices and tables
