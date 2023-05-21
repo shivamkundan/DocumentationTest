@@ -1,0 +1,7 @@
+newfile2 module
+==============
+
+.. automodule:: test_folder.newfile
+   :members:
+   :undoc-members:
+   :show-inheritance:
