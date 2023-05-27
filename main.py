@@ -4,9 +4,10 @@ import sys, os
 sys.path.append('/home/pi/DocumentationTest/test_folder/')
 
 ''' This is the main file'''
-import sys, os
 from newfile import *
 from newfile2 import *
+
+print (sys.path)
 
 def print_msg():
 	''' Prints a message'''
