@@ -16,7 +16,7 @@ Goals
 * Learn about software
 * Become the ultimate *Star Trek* fan
 
-.. image:: Images/top.png
+.. image:: top.png
 
 .. note::
    This is still a work in progress.
