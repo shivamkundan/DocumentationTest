@@ -1,11 +1,12 @@
 #!/usr/bin/python3
-"""
+'''
 This is the main page, Execution begins here.
+'''
 
-:note:: this is a note
-"""
-
-from batt_page import *
+import sys, os
+from global_functions import *
+sys.path.append(os.path.abspath('sensor_pages'))
+from vis_ir_page import *
 
 def print_msg(msg):
 	"""
@@ -19,9 +20,10 @@ def print_msg(msg):
 
 def main():
 	'''This is the main main function'''
-	print_msg(my_msg)
+	# print_msg(my_msg)
 
 	print_battery()
+	print_vis_ir()
 
 if __name__ == '__main__':
 	main()

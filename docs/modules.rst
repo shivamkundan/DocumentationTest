@@ -2,7 +2,8 @@ API Reference
 =================
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 3
 
    main
-   batt_page
+   global_functions
+   sensor_pages

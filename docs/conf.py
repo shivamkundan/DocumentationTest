@@ -7,6 +7,7 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 import sys, os
 sys.path.append(os.path.abspath('..'))
+sys.path.append(os.path.abspath('../sensor_pages/'))
 
 project = 'Tricorder-Rpi'
 copyright = '2023, Shivam Kundan'

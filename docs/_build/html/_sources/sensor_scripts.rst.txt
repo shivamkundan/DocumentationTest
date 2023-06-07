@@ -1,0 +1,26 @@
+sensor\_scripts package
+=======================
+
+Submodules
+----------
+
+* vis_ir_page.py
+* uv_page.py
+* temp_humid_page.py
+
+
+sensor\_scripts.vis\_ir\_page module
+------------------------------------
+
+.. automodule:: sensor_scripts.vis_ir_page
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: sensor_scripts
+   :members:
+   :undoc-members:
+   :show-inheritance:
