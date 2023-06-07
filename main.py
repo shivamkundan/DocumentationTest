@@ -10,8 +10,15 @@ sys.path.append(os.path.abspath('assets'))
 sys.path.append(os.path.abspath('resources'))
 sys.path.append(os.path.abspath('general_pages'))
 sys.path.append(os.path.abspath('freqshow_code'))
-from vis_ir_page import *
+
+from sensor_pages import *
+from general_pages import *
 from assets import *
+from resources import *
+from freqshow_code import *
+
+#: A global variable
+glob_var=0
 
 def print_msg(msg):
 	"""
@@ -27,8 +34,12 @@ def main():
 	'''This is the main main function'''
 	# print_msg(my_msg)
 
-	print_battery()
 	print_vis_ir()
+	print_fonts()
+	mappings_print()
+	print_dev()
+	print_freq()
+
 
 if __name__ == '__main__':
 	main()

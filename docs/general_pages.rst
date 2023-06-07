@@ -1,7 +1,19 @@
 general\_pages package
 ======================
 
-Contains definitions for pages other than sensor I/O.
+Submodules
+----------
+
+general\_pages.developer\_page module
+-------------------------------------
+
+.. automodule:: general_pages.developer_page
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
 
 .. automodule:: general_pages
    :members:

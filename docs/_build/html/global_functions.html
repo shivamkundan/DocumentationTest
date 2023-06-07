@@ -97,54 +97,44 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="global-functions-module">
-<h1>global_functions module<a class="headerlink" href="#global-functions-module" title="Permalink to this heading"></a></h1>
-<div class="admonition attention">
-<p class="admonition-title">Attention</p>
-<p>text</p>
-</div>
-<div class="admonition hint">
-<p class="admonition-title">Hint</p>
-<p>text</p>
-</div>
-<div class="admonition caution">
-<p class="admonition-title">Caution</p>
-<p>text</p>
-</div>
-<div class="admonition danger">
-<p class="admonition-title">Danger</p>
-<p>text</p>
-</div>
-<div class="admonition error">
-<p class="admonition-title">Error</p>
-<p>text</p>
-</div>
-<div class="admonition seealso">
-<p class="admonition-title">See also</p>
-<p>text</p>
-</div>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>text</p>
-</div>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>text</p>
-</div>
-<span class="target" id="module-global_functions"></span><p>Contains functions invoked by several different parts of the code.</p>
+  <div class="section" id="module-global_functions">
+<span id="global-functions-module"></span><h1>global_functions module<a class="headerlink" href="#module-global_functions" title="Permalink to this heading"></a></h1>
+<p>Contains functions invoked by several different parts of the code.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="global_functions.adjust_gauge_lims">
 <span class="sig-prename descclassname"><span class="pre">global_functions.</span></span><span class="sig-name descname"><span class="pre">adjust_gauge_lims</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">curr_val</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gauge</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#global_functions.adjust_gauge_lims" title="Permalink to this definition"></a></dt>
 <dd><p>For circular gauges. Adjusts upper/lower limits to nearest round numbers</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>curr_val</strong> (<em>float</em>) – Value to be shown on gauge</p></li>
+<li><p><strong>gauge</strong> (<code class="docutils literal notranslate"><span class="pre">AA_Gauge</span></code>) – Which gauge to update</p></li>
+</ul>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="global_functions.blitRotate2">
 <span class="sig-prename descclassname"><span class="pre">global_functions.</span></span><span class="sig-name descname"><span class="pre">blitRotate2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">surf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">image</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">topleft</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">angle</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#global_functions.blitRotate2" title="Permalink to this definition"></a></dt>
-<dd><p>Rotate an image around its center</p>
+<dd><p>Rotate an image around its center (instead of top corner)</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>surf,w,h</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>surf</strong> (<em>pygame.Surface</em>) – pygame surface to blit to</p></li>
+<li><p><strong>image</strong> (<em>pygame.image</em>) – image to be rotated</p></li>
+<li><p><strong>topleft</strong> (<em>int</em>) – top-left co-ord of image</p></li>
+<li><p><strong>angle</strong> (<em>int</em>) – rotate by this angle</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>w (<em>int</em>):</dt><dd><p>width</p>
+</dd>
+<dt>w2 (<em>int</em>):</dt><dd><p>width2</p>
+</dd>
+</dl>
+</p>
 </dd>
 </dl>
 </dd></dl>
@@ -152,31 +142,94 @@
 <dl class="py function">
 <dt class="sig sig-object py" id="global_functions.blit_some_stats">
 <span class="sig-prename descclassname"><span class="pre">global_functions.</span></span><span class="sig-name descname"><span class="pre">blit_some_stats</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">screen</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">day</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">date</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hour_sec</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fps</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cpu_pct</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cpu_temp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wifi_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wifi_symbol</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bluetooth_img</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#global_functions.blit_some_stats" title="Permalink to this definition"></a></dt>
-<dd><p>These pieces of info are always displayed in the top bar or in the Okudagrams</p>
+<dd><p>These pieces of info are always displayed in the top bar or in the Okudagrams.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>screen</strong> (<em>pygame.Screen</em>) – Screen surface for blitting</p></li>
+<li><p><strong>width</strong> (<em>int</em>) – </p></li>
+<li><p><strong>day</strong> (<em>string</em>) – </p></li>
+<li><p><strong>date</strong> (<em>string</em>) – </p></li>
+<li><p><strong>hour_sec</strong> (<em>string</em>) – </p></li>
+<li><p><strong>fps</strong> (<em>float</em>) – </p></li>
+<li><p><strong>cpu_pct</strong> (<em>float</em>) – </p></li>
+<li><p><strong>cpu_temp</strong> (<em>float</em>) – </p></li>
+<li><p><strong>wifi_name</strong> (<em>string</em>) – Name of currently connected wifi (if any)</p></li>
+<li><p><strong>wifi_symbol</strong> (<em>pygame.image</em>) – Wifi symbol</p></li>
+<li><p><strong>bluetooth_img</strong> (<em>pygame.image</em>) – Bluetooth symbol</p></li>
+</ul>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="global_functions.flip_buttons">
 <span class="sig-prename descclassname"><span class="pre">global_functions.</span></span><span class="sig-name descname"><span class="pre">flip_buttons</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pressed_button</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">button_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#global_functions.flip_buttons" title="Permalink to this definition"></a></dt>
 <dd><p>Unselect all other buttons except the one just pressed</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pressed_button</strong> (<em>button</em>) – Pressed button that called this function</p></li>
+<li><p><strong>button_list</strong> (<em>list</em>) – List of all buttons on this page</p></li>
+</ul>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="global_functions.get_date_time">
 <span class="sig-prename descclassname"><span class="pre">global_functions.</span></span><span class="sig-name descname"><span class="pre">get_date_time</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#global_functions.get_date_time" title="Permalink to this definition"></a></dt>
 <dd><p>Get formatted time for top toolbar display</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>day, date, hour_sec</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><em>string, string, string</em></p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="global_functions.get_text_dimensions">
 <span class="sig-prename descclassname"><span class="pre">global_functions.</span></span><span class="sig-name descname"><span class="pre">get_text_dimensions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">font_style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'FONT_DIN'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">font_color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'WHITE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">font_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">28</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#global_functions.get_text_dimensions" title="Permalink to this definition"></a></dt>
 <dd><p>Return size of to-be-rendered text</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>text</strong> (<em>string</em>) – Find size of this text</p></li>
+<li><p><strong>font_style</strong> (<em>pygame.font</em>) – Choice of font affects dimensions, default is <code class="docutils literal notranslate"><span class="pre">FONT_DIN</span></code>.</p></li>
+<li><p><strong>font_color</strong> (<em>pygame.Color</em>) – Color defaults to <code class="docutils literal notranslate"><span class="pre">WHITE</span></code></p></li>
+<li><p><strong>style</strong> (<em>int</em>) – <code class="docutils literal notranslate"><span class="pre">0</span></code> for normal (default), <code class="docutils literal notranslate"><span class="pre">1</span></code> for bold</p></li>
+<li><p><strong>font_size</strong> (<em>int</em>) – size of text</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>surf (<em>pygame.Surface)</em>:</dt><dd><p>Surface of rendered text (not used)</p>
+</dd>
+<dt>w (<em>int</em>):</dt><dd><p>width (in px) of to-be-rendered tex</p>
+</dd>
+<dt>h (<em>int</em>):</dt><dd><p>height (in px) of to-be-rendered text</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="global_functions.get_wifi_name">
 <span class="sig-prename descclassname"><span class="pre">global_functions.</span></span><span class="sig-name descname"><span class="pre">get_wifi_name</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#global_functions.get_wifi_name" title="Permalink to this definition"></a></dt>
-<dd><p>Check for connected wifi network. Return network name</p>
+<dd><p>Returns name of wifi network if connected.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return wifi_name</dt>
+<dd class="field-odd"><p>Name of network if connected, “No WiFi” otherwise</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><em>string</em></p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py function">
@@ -192,15 +245,18 @@
 </dd>
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>x</strong> – Input value to be mapped</p></li>
-<li><p><strong>in_min</strong> – Least possible value for input</p></li>
-<li><p><strong>in_max</strong> – Max possible value for input</p></li>
-<li><p><strong>out_min</strong> – Least possible value for output</p></li>
-<li><p><strong>out_max</strong> – Max possible value for output</p></li>
+<li><p><strong>x</strong> (<em>float/int</em>) – Input value to be mapped</p></li>
+<li><p><strong>in_min</strong> (<em>float/int</em>) – Least possible value for input</p></li>
+<li><p><strong>in_max</strong> (<em>float/int</em>) – Max possible value for input</p></li>
+<li><p><strong>out_min</strong> (<em>float/int</em>) – Least possible value for output</p></li>
+<li><p><strong>out_max</strong> (<em>float/int</em>) – Max possible value for output</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>Scaled value</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>float</p>
 </dd>
 </dl>
 </dd></dl>
@@ -215,6 +271,17 @@
 <dt class="sig sig-object py" id="global_functions.update_cpu_stats">
 <span class="sig-prename descclassname"><span class="pre">global_functions.</span></span><span class="sig-name descname"><span class="pre">update_cpu_stats</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#global_functions.update_cpu_stats" title="Permalink to this definition"></a></dt>
 <dd><p>Get rapsberry pi usage stats</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><dl class="simple">
+<dt>cpu_pct (<em>float</em>):</dt><dd><p>CPU % in use</p>
+</dd>
+<dt>cpu_temp (<em>float</em>):</dt><dd><p>CPU temperature in C</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
 </dd></dl>
 
 </div>

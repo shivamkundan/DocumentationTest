@@ -1,0 +1,15 @@
+freqshow\_code package
+======================
+
+Code from Adafruit's [FreqShow] (https://github.com/adafruit/FreqShow) project. Used for the Software Defined Radio (SDR) function. Find the  `code`_
+
+.. _code: https://github.com/adafruit/FreqShow
+
+
+View the [source code](https://github.com/poliastro/poliastro) of poliastro!
+
+
+.. automodule:: freqshow_code
+   :members:
+   :undoc-members:
+   :show-inheritance:
