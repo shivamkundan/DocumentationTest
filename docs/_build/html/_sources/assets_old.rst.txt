@@ -1,0 +1,9 @@
+assets package
+==============
+
+Contains buttons, colors, fonts, and images.
+
+.. automodule:: assets
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -6,7 +6,12 @@ This is the main page, Execution begins here.
 import sys, os
 from global_functions import *
 sys.path.append(os.path.abspath('sensor_pages'))
+sys.path.append(os.path.abspath('assets'))
+sys.path.append(os.path.abspath('resources'))
+sys.path.append(os.path.abspath('general_pages'))
+sys.path.append(os.path.abspath('freqshow_code'))
 from vis_ir_page import *
+from assets import *
 
 def print_msg(msg):
 	"""

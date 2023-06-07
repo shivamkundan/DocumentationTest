@@ -1,4 +1,4 @@
-global\_functions
+global\_functions module
 ========================
 
 .. attention::
