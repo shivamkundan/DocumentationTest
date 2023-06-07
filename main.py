@@ -1,33 +1,27 @@
 #!/usr/bin/python3
 """
 This is the main page, Execution begins here.
+
+:note:: this is a note
 """
 
+from batt_page import *
 
-import sys, os
-sys.path.append('/home/pi/DocumentationTest/test_folder/')
-from newfile import *
-from newfile2 import *
-
-
-
-print (sys.path)
-
-def print_msg():
+def print_msg(msg):
 	"""
 	Prints a message
 
-	:param user_data: The Gtk.LinkButton that should be opened when the Gtk.EventBox is clicked.
+	:param msg: message to be printed
 	:param other: Another param.
 	:return: None
 	"""
-	print ("This is a message")
+	print (msg)
 
 def main():
 	'''This is the main main function'''
-	print_msg()
-	new_func()
-	new_func2()
+	print_msg(my_msg)
+
+	print_battery()
 
 if __name__ == '__main__':
 	main()
