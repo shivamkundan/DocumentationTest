@@ -9,10 +9,20 @@ Welcome to Tricorder-Rpi's documentation!
 About this project
 -------------------
 
-This is my project.
+Goals
+~~~~~~
+* Create the most advanced possible tricorder
+* Learn about hardware
+* Learn about software
+* Become the ultimate *Star Trek* fan
+
+.. image:: Images/top.png
+
+.. note::
+   This is still a work in progress.
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 3
    :hidden:
    :caption: Contents
 
@@ -20,6 +30,7 @@ This is my project.
 
 .. toctree::
    :maxdepth: 1
+   :hidden:
    :caption: About
 
    About/about_hw
