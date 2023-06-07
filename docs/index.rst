@@ -9,6 +9,16 @@ Welcome to Tricorder-Rpi's documentation!
 About this project
 -------------------
 
+Implementation of a **functional** tricorder device from Star Trek. This manual documents one portion of a two-part project running on a battery powered RaspberryPi 4.
+
+Find the code at github: `here`_.
+
+.. _here: https://github.com/shivamkundan/Tricorder-RaspberryPi
+
+.. note::
+   This is still a work in progress.
+
+
 Goals
 ~~~~~~
 * Create the most advanced possible tricorder
@@ -18,8 +28,7 @@ Goals
 
 .. image:: top.png
 
-.. note::
-   This is still a work in progress.
+
 
 .. toctree::
    :maxdepth: 3
