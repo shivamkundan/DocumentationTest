@@ -1,0 +1,8 @@
+resources package
+=================
+
+
+.. automodule:: resources
+   :members:
+   :undoc-members:
+   :show-inheritance:
