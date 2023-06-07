@@ -1,4 +1,5 @@
-''' This file contains a few functions'''
+''' This file also contains a few functions
+'''
 
 
 def new_func2():
