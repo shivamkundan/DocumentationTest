@@ -19,8 +19,8 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="About the hardware" href="About/about_hw.html" />
-    <link rel="prev" title="global_functions" href="global_functions.html" /> 
+    <link rel="next" title="freqshow_code package" href="freqshow_code.html" />
+    <link rel="prev" title="general_pages package" href="general_pages.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -45,14 +45,19 @@
               <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="modules.html">API Reference</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="main.html">main module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="global_functions.html">global_functions</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">sensor_pages package</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#module-sensor_pages.vis_ir_page">sensor_pages.vis_ir_page module</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#sensor_pages.vis_ir_page.LightSensorPage"><code class="docutils literal notranslate"><span class="pre">LightSensorPage</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sensor_pages.vis_ir_page.print_vis_ir"><code class="docutils literal notranslate"><span class="pre">print_vis_ir()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules.html#modules">Modules</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="modules.html#packages">Packages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="assets.html">assets package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="resources.html">resources package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="general_pages.html">general_pages package</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">sensor_pages package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-sensor_pages.sdr_page">sensor_pages.sdr_page module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-sensor_pages.vis_ir_page">sensor_pages.vis_ir_page module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-sensor_pages">Module contents</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="freqshow_code.html">freqshow_code package</a></li>
 </ul>
 </li>
 </ul>
@@ -91,10 +96,56 @@
              
   <div class="section" id="sensor-pages-package">
 <h1>sensor_pages package<a class="headerlink" href="#sensor-pages-package" title="Permalink to this heading"></a></h1>
-<p>Contains pages for visualizing sensor data.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Some information here</p>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
+</div>
+<div class="section" id="module-sensor_pages.sdr_page">
+<span id="sensor-pages-sdr-page-module"></span><h2>sensor_pages.sdr_page module<a class="headerlink" href="#module-sensor_pages.sdr_page" title="Permalink to this heading"></a></h2>
+<p>For visualizing data from RTL2832 SDR dongle.
+Two modes of visualizing: line plot and waterfall.
+Reverse-engineered from Adafruit’s FreqShow project.</p>
+<dl class="py data">
+<dt class="sig sig-object py" id="sensor_pages.sdr_page.INIT_FREQ">
+<span class="sig-prename descclassname"><span class="pre">sensor_pages.sdr_page.</span></span><span class="sig-name descname"><span class="pre">INIT_FREQ</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">433.0</span></em><a class="headerlink" href="#sensor_pages.sdr_page.INIT_FREQ" title="Permalink to this definition"></a></dt>
+<dd><p>Starting frequency</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sensor_pages.sdr_page.SoftwareDefinedRadioPage">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">sensor_pages.sdr_page.</span></span><span class="sig-name descname"><span class="pre">SoftwareDefinedRadioPage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sensor_pages.sdr_page.SoftwareDefinedRadioPage" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>For visualizing data from RTL2832 SDR dongle</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="sensor_pages.sdr_page.SoftwareDefinedRadioPage.blit_title">
+<span class="sig-name descname"><span class="pre">blit_title</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">screen</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sensor_pages.sdr_page.SoftwareDefinedRadioPage.blit_title" title="Permalink to this definition"></a></dt>
+<dd><p>Display page title</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sensor_pages.sdr_page.SoftwareDefinedRadioPage.init_sdr">
+<span class="sig-name descname"><span class="pre">init_sdr</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sensor_pages.sdr_page.SoftwareDefinedRadioPage.init_sdr" title="Permalink to this definition"></a></dt>
+<dd><p>Initialize the RTL2832 SDR lib</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sensor_pages.sdr_page.SoftwareDefinedRadioPage.next_frame">
+<span class="sig-name descname"><span class="pre">next_frame</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">screen</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">curr_events</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sensor_pages.sdr_page.SoftwareDefinedRadioPage.next_frame" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sensor_pages.sdr_page.SoftwareDefinedRadioPage.set_freq_manual">
+<span class="sig-name descname"><span class="pre">set_freq_manual</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">new_freq</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sensor_pages.sdr_page.SoftwareDefinedRadioPage.set_freq_manual" title="Permalink to this definition"></a></dt>
+<dd><p>Manually set a specific frequency</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="sensor_pages.sdr_page.WIN_SIZE">
+<span class="sig-prename descclassname"><span class="pre">sensor_pages.sdr_page.</span></span><span class="sig-name descname"><span class="pre">WIN_SIZE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">(680,</span> <span class="pre">720)</span></em><a class="headerlink" href="#sensor_pages.sdr_page.WIN_SIZE" title="Permalink to this definition"></a></dt>
+<dd><p>Leave some top &amp; bottom border for text and buttons</p>
+</dd></dl>
+
 </div>
 <div class="section" id="module-sensor_pages.vis_ir_page">
 <span id="sensor-pages-vis-ir-page-module"></span><h2>sensor_pages.vis_ir_page module<a class="headerlink" href="#module-sensor_pages.vis_ir_page" title="Permalink to this heading"></a></h2>
@@ -164,14 +215,17 @@
 </dd></dl>
 
 </div>
+<div class="section" id="module-sensor_pages">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-sensor_pages" title="Permalink to this heading"></a></h2>
+</div>
 </div>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="global_functions.html" class="btn btn-neutral float-left" title="global_functions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="About/about_hw.html" class="btn btn-neutral float-right" title="About the hardware" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="general_pages.html" class="btn btn-neutral float-left" title="general_pages package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="freqshow_code.html" class="btn btn-neutral float-right" title="freqshow_code package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

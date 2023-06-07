@@ -1,11 +1,16 @@
 sensor\_pages package
 =====================
 
-Contains pages for visualizing sensor data.
+Submodules
+----------
 
-.. note::
-   Some information here
+sensor\_pages.sdr\_page module
+------------------------------
 
+.. automodule:: sensor_pages.sdr_page
+   :members:
+   :undoc-members:
+   :show-inheritance:
 
 sensor\_pages.vis\_ir\_page module
 ----------------------------------
@@ -15,11 +20,10 @@ sensor\_pages.vis\_ir\_page module
    :undoc-members:
    :show-inheritance:
 
+Module contents
+---------------
 
-.. Module contents
-.. ---------------
-
-.. .. automodule:: sensor_pages
-..    :members:
-..    :undoc-members:
-..    :show-inheritance:
+.. automodule:: sensor_pages
+   :members:
+   :undoc-members:
+   :show-inheritance:
